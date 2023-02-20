@@ -1,0 +1,67 @@
+// .section{
+//     display: inline;
+//     overflow: hidden;
+//     height: 10rem;
+//     width: 100%;
+//     background-color: aqua;
+//     &_left{
+//      background-color: antiquewhite;
+//     }
+//     &_middle{
+//         display: inline;
+//         height: 6rem;
+//         width: 100%;
+//         background-color: saddlebrown;       
+//     }  
+// }
+
+
+.nav{
+    
+    background-image: linear-gradient(to right bottom, $color-primary, rgba($color-primary, 0.9));
+    overflow: hidden;
+}
+li{
+    float: left;
+    margin: 2.6rem;
+    list-style-type: none;
+
+    &:nth-of-type(6),
+    &:nth-of-type(7){
+        float: right;
+    }
+   
+}
+
+li a {
+    display: block;
+      text-decoration: none;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ffff;
+      padding: 14px 16px;
+}
+
+.section__header{
+    
+   
+    &--img{
+        position: relative;
+    height: 85vh;
+    background-image: url(/img/Topsteam/header.jpg);
+      
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+
+    &--content{
+        position:absolute;
+        top:40%;
+        left: 49%;
+        transform: translate(-50%, -50%);
+   
+    }
+}
+

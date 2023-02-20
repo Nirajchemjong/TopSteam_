@@ -1,0 +1,42 @@
+.btn{
+
+    border: 2px solid white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 11%;
+    
+}
+button{
+
+  
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: transparent;
+    
+    margin-top: 1.3rem;
+ 
+    
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #ffff;
+   
+}
+.btn__car{
+    border: solid white;
+    padding:1.3em 5.3em 1.3em 1.3em;
+    margin-right: 0;
+}
+.btn__model{
+    border: solid white;
+    padding:1.3em 5.3em 1.3em 1.3em;
+    margin-left: -5px;
+}
+
+.btn__search{
+    border: solid white;
+    padding:1.3em 5.3em 1.3em 1.3em;
+    border-radius:0em 2.3em 2.3em 0em; ;
+    margin-left: -5px;
+}

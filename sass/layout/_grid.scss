@@ -1,0 +1,70 @@
+// .wrapper{
+//     display: grid;
+//     height: 60rem;
+//     grid-template-rows:1fr;
+//     grid-template-columns: repeat(4,1fr);  
+// }
+
+// .item1{
+//    grid-column: 1/5;
+//     background-color: red;
+// }bi [class^="col-"]{// .item2{
+   
+//     background-color: blue;
+
+// }
+// .item3{
+//     grid-column: 2/4;
+ 
+//     background-color: green;
+// }
+// .item5{
+//     grid-column: 2/4;
+//     grid-row: 3/4;
+//     height: 12rem;
+//     background-color: aquamarine;
+// }
+// .item6{
+//     background-color: black;
+// }
+
+//Grid 
+
+.row{
+
+    max-width: $grid-width;
+    margin: 0 auto;
+
+    &:not(:last-child){
+        margin-bottom: $gutter-vertical;  //selecting all the child except last child.
+    
+    }
+
+    [class^= "item"]{
+        float: left;
+
+        &:not(:last-child){
+            margin-right: $gutter-horizontal;
+
+        }
+
+
+    }
+    .item1{
+        width: calc(#{$gutter-horizontal} + (100% - #{$gutter-horizontal})/2);
+        background-color: antiquewhite;
+    }
+    .item3{
+        width: calc((100% - 2 * #{$gutter-horizontal})/3);
+        background-color: red;
+    }
+    .item-2-of-3{
+        width: calc(#{$gutter-horizontal} + (2 * (100% - 2 * #{$gutter-horizontal})/3));
+        background-color: black;
+    }
+    .item-3-of-3{
+        width: calc(#{$gutter-horizontal} + (4 * (100% - 4 * #{$gutter-horizontal})/4));
+        background-color: pink;
+    }
+}
+
