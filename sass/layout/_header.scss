@@ -47,9 +47,9 @@ li a {
    
     &--img{
         position: relative;
-    height: 85vh;
-    background-image: url(/img/Topsteam/header.jpg);
-      
+        height: 85vh;
+        background-image: url(/img/Topsteam/header.jpg);
+        z-index: -1;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;

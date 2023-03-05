@@ -1,24 +1,32 @@
-.section__header-1{
+.primary__header{
     font-size: 6.3rem;
     text-decoration: none;
     font-weight: 100;
+ 
+}
+.section__header-1{
+    color:white;
+   
     margin-top: 13rem;
-    color: white;
-    
 }
 .section__header-2{
     text-decoration: none;
     padding-left: -3rem;
     color: $color-primary;
     font-weight: 400;
+   
 }
 
 .steam{
     color: #3b1606;
 }
-.section__paragraph{
+  
+.primary__secondary{
+   
     font-size: 2.7rem;
-    color: #ffff;
     text-decoration: none;
     font-weight: 200;
+}
+.content-1{
+    width: 730px;
 }

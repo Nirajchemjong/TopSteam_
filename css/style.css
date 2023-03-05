@@ -2,17 +2,23 @@
 *::after,
 *::before {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  box-sizing: border-box; }
 
 html {
   font-size: 62.5%; }
 
-.section__header-1 {
+.primary__header {
   font-size: 6.3rem;
   text-decoration: none;
-  font-weight: 100;
-  margin-top: 13rem;
-  color: white; }
+  font-weight: 100; }
+
+.section__header-1 {
+  color: white;
+  margin-top: 13rem; }
 
 .section__header-2 {
   text-decoration: none;
@@ -23,11 +29,13 @@ html {
 .steam {
   color: #3b1606; }
 
-.section__paragraph {
+.primary__secondary {
   font-size: 2.7rem;
-  color: #ffff;
   text-decoration: none;
   font-weight: 200; }
+
+.content-1 {
+  width: 730px; }
 
 .nav {
   background-image: linear-gradient(to right bottom, #d5a12b, rgba(213, 161, 43, 0.9));
@@ -52,6 +60,7 @@ li a {
   position: relative;
   height: 85vh;
   background-image: url(/img/Topsteam/header.jpg);
+  z-index: -1;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
@@ -64,25 +73,72 @@ li a {
 
 .row {
   max-width: 114rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  content: "";
+  display: table;
+  clear: both; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
-  .row [class^="item"] {
+  .row [class^="col-"] {
     float: left; }
-    .row [class^="item"]:not(:last-child) {
+    .row [class^="col-"]:not(:last-child) {
       margin-right: 4rem; }
-  .row .item1 {
-    width: calc(4rem + (100% - 4rem)/2);
-    background-color: antiquewhite; }
-  .row .item3 {
-    width: calc((100% - 2 * 4rem)/3);
-    background-color: red; }
-  .row .item-2-of-3 {
-    width: calc(4rem + (2 * (100% - 2 * 4rem)/3));
-    background-color: black; }
-  .row .item-3-of-3 {
-    width: calc(4rem + (4 * (100% - 4 * 4rem)/4));
-    background-color: pink; }
+  .row .col-1-of-2 {
+    width: calc((100% - 4rem) / 2);
+    background-color: yellowgreen; }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 4rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 4rem) / 3) + 4rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 4rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 4rem) / 4) + 4rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 4rem) / 4) + 2 * 4rem); }
+
+.main {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: repeat(8, 2fr);
+  grid-template-columns: repeat(3, 2fr); }
+  .main .section__info {
+    grid-row: 1 / 6;
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-rows: repeat(3, 442px);
+    grid-template-columns: repeat(2, 683px);
+    justify-content: center;
+    align-items: stretch; }
+    .main .section__info .img-1 {
+      background-color: yellowgreen;
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+      background-image: url("/img/Topsteam/pexels-artem-podrez-8985963.jpg");
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .main .section__info .img-2 {
+      background-color: yellowgreen;
+      grid-row: 2/ 3;
+      grid-column: 2 / -1; }
+    .main .section__info .img-3 {
+      background-color: yellowgreen;
+      grid-row: 3/ -1;
+      grid-column: 1 / 2; }
+    .main .section__info .content-1 {
+      grid-row: 1 / 2;
+      grid-column: 2 / -1;
+      margin: 0 auto;
+      text-align: left;
+      padding: 3rem; }
+    .main .section__info .content-2 {
+      background-color: rebeccapurple;
+      grid-row: 2 / 3;
+      grid-column: 1 / 2; }
+    .main .section__info .content-3 {
+      background-color: rebeccapurple;
+      grid-row: 3 / -1;
+      grid-column: 2 / -1; }
 
 .btn {
   border: 2px solid white;
@@ -146,3 +202,26 @@ button {
     top: 50%;
     left: 100%;
     transform: translate(-50%, -50%); }
+
+.section__box {
+  z-index: 3;
+  overflow: hidden;
+  margin: 0 auto; }
+
+.boxes {
+  background-color: aqua;
+  min-width: 30rem;
+  min-height: 25rem;
+  margin-top: -12rem;
+  margin-bottom: 2rem;
+  z-index: 2;
+  overflow: hidden;
+  text-align: center; }
+  .boxes__img {
+    margin-top: 8rem; }
+  .boxes__text {
+    margin-top: 3rem;
+    font-size: 1.2rem; }
+
+.boxes__icon {
+  font-size: 5rem; }

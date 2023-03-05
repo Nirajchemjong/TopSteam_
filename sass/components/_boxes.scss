@@ -1,0 +1,33 @@
+.section__box{
+    z-index: 3;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.boxes{
+    background-color: aqua;
+    min-width: 30rem;
+    min-height: 25rem;
+    margin-top: -12rem;
+    margin-bottom: 2rem;
+    z-index: 2;
+    overflow: hidden;
+    
+    text-align: center;
+    
+   
+    &__img{
+        margin-top: 8rem;
+    
+
+    }
+    &__text{
+
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    }
+    
+}
+.boxes__icon{
+   font-size: 5rem;
+  }

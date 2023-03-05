@@ -40,7 +40,8 @@
     
     }
 
-    [class^= "item"]{
+    @include clearfix;
+    [class^="col-"]{
         float: left;
 
         &:not(:last-child){
@@ -50,21 +51,130 @@
 
 
     }
-    .item1{
-        width: calc(#{$gutter-horizontal} + (100% - #{$gutter-horizontal})/2);
-        background-color: antiquewhite;
+    // .col-1-of-2{
+    //     width: calc((100% - #{$gutter-horizontal})/2);
+    //     background-color: yellowgreen;
+    // }
+    // .col-1-of-1{
+    //     width: calc(#{$gutter-horizontal} + (100% - #{$gutter-horizontal})/2);
+    //     background-color: orangered;
+    // }
+    // .col-1-of-3{
+    //     width: calc((100% - 2 * #{$gutter-horizontal})/3);
+    //     background-color: red;
+    // }
+    // .col-2-of-3{
+    //     width: calc(#{$gutter-horizontal} + (2 * (100% - 2 * #{$gutter-horizontal})/3));
+    //     background-color: black;
+    // }
+    // .col-3-of-3{
+    //     width: calc(#{$gutter-horizontal} + (4 * (100% - 4 * #{$gutter-horizontal})/4));
+    //     background-color: pink;
+    // }
+
+
+    .col-1-of-2 {
+        width: calc((100% - #{$gutter-horizontal}) / 2);
+        background-color: yellowgreen;
     }
-    .item3{
-        width: calc((100% - 2 * #{$gutter-horizontal})/3);
-        background-color: red;
+
+    .col-1-of-3 {
+        width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
     }
-    .item-2-of-3{
-        width: calc(#{$gutter-horizontal} + (2 * (100% - 2 * #{$gutter-horizontal})/3));
-        background-color: black;
+
+    .col-2-of-3 {
+        width: calc(2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal});
     }
-    .item-3-of-3{
-        width: calc(#{$gutter-horizontal} + (4 * (100% - 4 * #{$gutter-horizontal})/4));
-        background-color: pink;
+
+    .col-1-of-4 {
+        width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
+    }
+
+    .col-2-of-4 {
+        width: calc(2 * ((100% - 3 * #{$gutter-horizontal}) / 4) + #{$gutter-horizontal});
+    }
+
+    .col-3-of-4 {
+        width: calc(3 * ((100% - 3 * #{$gutter-horizontal}) / 4) + 2 * #{$gutter-horizontal});
     }
 }
 
+//CREATING GRID LAYOUT FOR SERVICES AND FOOTER THANKS; 
+
+.main{
+    display:grid;
+    height: 100vh;
+    grid-template-rows: repeat(8, 2fr);
+    grid-template-columns: repeat(3, 2fr);
+    
+   .section__info{
+    grid-row: 1 / 6 ;
+    grid-column: 1 / -1;
+    
+    
+    display:grid;
+    grid-template-rows: repeat(3, 442px);
+    grid-template-columns: repeat(2, 683px);
+    justify-content: center;
+    align-items:stretch;
+    
+    
+    .img-1{
+        background-color: yellowgreen;
+        grid-row:1 / 2 ;
+        grid-column: 1 / 2;
+        background-image: url("/img/Topsteam/pexels-artem-podrez-8985963.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+        
+        
+    }
+    .img-2{
+        background-color: yellowgreen;
+        grid-row:2/ 3 ;
+        grid-column: 2 / -1;
+
+    }
+
+    .img-3{
+        background-color: yellowgreen;
+        grid-row: 3/ -1 ;
+        grid-column: 1 / 2;
+    }
+
+    .content-1{
+       
+        grid-row: 1 / 2 ;
+        grid-column: 2 / -1;
+        margin: 0 auto;
+        text-align: left;
+        padding: 3rem;
+        
+    }
+    .content-2{
+        background-color: rebeccapurple;
+        grid-row: 2 / 3 ;
+        grid-column: 1 / 2;
+
+    }
+    .content-3{
+        background-color: rebeccapurple;
+        grid-row: 3 / -1 ;
+        grid-column: 2 / -1;
+
+    }
+
+   }
+   
+
+}
+// .section__info{
+//     display: grid;
+
+//     margin: 0 auto;
+//     width: 80%;
+//     grid-template-rows:repeat(3, 1fr);
+//     grid-template-columns: repeat(2, 1fr);
+//     background-color: rebeccapurple;
+// }

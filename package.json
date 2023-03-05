@@ -2,7 +2,7 @@
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/style.css -w",
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
-    "devserver": "live-server",
+    "devserver": "live-server --browser='firefox'",
     "start": "npm-run-all --parallel devserver watch:sass"
   },
   "dependencies": {
