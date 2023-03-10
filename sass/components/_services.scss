@@ -1,0 +1,32 @@
+
+.section__services{
+  
+ 
+
+}
+.services__content{
+    max-width: 100%;
+   
+   
+   
+    
+
+    &--img{
+     
+        max-width: 43rem;
+        overflow: hidden;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &-1{
+            height: 12rem;
+        }
+       
+        &-p{
+            text-align: center;
+            font-size: 2.4rem;
+        }
+
+    }
+}

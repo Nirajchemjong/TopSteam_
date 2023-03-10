@@ -34,8 +34,11 @@ html {
   text-decoration: none;
   font-weight: 200; }
 
-.content-1 {
-  width: 730px; }
+.u-margin-top {
+  margin-top: 12rem; }
+
+.small-margin-top {
+  margin-top: 4rem; }
 
 .nav {
   background-image: linear-gradient(to right bottom, #d5a12b, rgba(213, 161, 43, 0.9));
@@ -97,48 +100,66 @@ li a {
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 3 * 4rem) / 4) + 2 * 4rem); }
 
-.main {
+.main .section__info {
   display: grid;
-  height: 100vh;
-  grid-template-rows: repeat(8, 2fr);
-  grid-template-columns: repeat(3, 2fr); }
-  .main .section__info {
-    grid-row: 1 / 6;
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-rows: repeat(3, 442px);
-    grid-template-columns: repeat(2, 683px);
-    justify-content: center;
-    align-items: stretch; }
-    .main .section__info .img-1 {
-      background-color: yellowgreen;
-      grid-row: 1 / 2;
-      grid-column: 1 / 2;
-      background-image: url("/img/Topsteam/pexels-artem-podrez-8985963.jpg");
-      background-repeat: no-repeat;
-      background-size: cover; }
-    .main .section__info .img-2 {
-      background-color: yellowgreen;
-      grid-row: 2/ 3;
-      grid-column: 2 / -1; }
-    .main .section__info .img-3 {
-      background-color: yellowgreen;
-      grid-row: 3/ -1;
-      grid-column: 1 / 2; }
-    .main .section__info .content-1 {
-      grid-row: 1 / 2;
-      grid-column: 2 / -1;
-      margin: 0 auto;
-      text-align: left;
-      padding: 3rem; }
-    .main .section__info .content-2 {
-      background-color: rebeccapurple;
-      grid-row: 2 / 3;
-      grid-column: 1 / 2; }
-    .main .section__info .content-3 {
-      background-color: rebeccapurple;
-      grid-row: 3 / -1;
-      grid-column: 2 / -1; }
+  grid-template-rows: repeat(3, 442px);
+  grid-template-columns: repeat(2, 683px);
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+  .main .section__info .img-1 {
+    max-width: 60rem;
+    height: 44rem;
+    margin-left: 3rem;
+    background-color: yellowgreen;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    background-image: url("/img/Topsteam/pexels-artem-podrez-8985963.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 10; }
+  .main .section__info .img-2 {
+    grid-row: 2/ 3;
+    grid-column: 2 / -1;
+    max-width: 60rem;
+    height: 44rem;
+    margin-left: 3rem;
+    background-image: url("/img/Topsteam/pexels-andrea-piacquadio-3807811.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .main .section__info .img-3 {
+    grid-row: 3/ -1;
+    grid-column: 1 / 2;
+    max-width: 60rem;
+    height: 44rem;
+    margin-left: 3rem;
+    background-image: url("/img/Topsteam/pexels-daniel-andraski-13065690.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .main .section__info .content-1 {
+    grid-row: 1 / 2;
+    grid-column: 2 / -1;
+    margin: 0 auto;
+    text-align: left;
+    padding: 3rem; }
+  .main .section__info .content-2 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    margin: 0 auto;
+    text-align: left;
+    padding: 3rem; }
+  .main .section__info .content-3 {
+    grid-row: 3 / -1;
+    grid-column: 2 / -1;
+    margin: 0 auto;
+    text-align: left;
+    padding: 3rem; }
+
+.main .services__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
 
 .btn {
   border: 2px solid white;
@@ -225,3 +246,17 @@ button {
 
 .boxes__icon {
   font-size: 5rem; }
+
+.services__content {
+  max-width: 100%; }
+  .services__content--img {
+    max-width: 43rem;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .services__content--img-1 {
+      height: 12rem; }
+    .services__content--img-p {
+      text-align: center;
+      font-size: 2.4rem; }

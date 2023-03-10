@@ -102,45 +102,60 @@
 //CREATING GRID LAYOUT FOR SERVICES AND FOOTER THANKS; 
 
 .main{
-    display:grid;
-    height: 100vh;
-    grid-template-rows: repeat(8, 2fr);
-    grid-template-columns: repeat(3, 2fr);
     
+  
+
    .section__info{
-    grid-row: 1 / 6 ;
-    grid-column: 1 / -1;
-    
-    
+  
     display:grid;
     grid-template-rows: repeat(3, 442px);
     grid-template-columns: repeat(2, 683px);
     justify-content: center;
-    align-items:stretch;
+    align-items: center;
+    position: relative;
+
+   
     
     
     .img-1{
+        max-width: 60rem;
+        height: 44rem;
+        margin-left: 3rem;
         background-color: yellowgreen;
         grid-row:1 / 2 ;
         grid-column: 1 / 2;
         background-image: url("/img/Topsteam/pexels-artem-podrez-8985963.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+        position: relative;
+        z-index: 10;
     
         
         
     }
     .img-2{
-        background-color: yellowgreen;
+
         grid-row:2/ 3 ;
         grid-column: 2 / -1;
+        max-width: 60rem;
+        height: 44rem;
+        margin-left: 3rem;
+        background-image: url("/img/Topsteam/pexels-andrea-piacquadio-3807811.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
 
     }
 
     .img-3{
-        background-color: yellowgreen;
+       
         grid-row: 3/ -1 ;
         grid-column: 1 / 2;
+        max-width: 60rem;
+        height: 44rem;
+        margin-left: 3rem;
+        background-image: url("/img/Topsteam/pexels-daniel-andraski-13065690.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .content-1{
@@ -153,28 +168,33 @@
         
     }
     .content-2{
-        background-color: rebeccapurple;
+       
         grid-row: 2 / 3 ;
         grid-column: 1 / 2;
+        margin: 0 auto;
+        text-align: left;
+        padding: 3rem;
 
     }
     .content-3{
-        background-color: rebeccapurple;
+        
         grid-row: 3 / -1 ;
         grid-column: 2 / -1;
+        margin: 0 auto;
+        text-align: left;
+        padding: 3rem;
 
     }
 
    }
    
+   /////////////////////////////////////////////////////////////////////////
+   /// ////////// Services ../////
+ .services__content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }   
+
 
 }
-// .section__info{
-//     display: grid;
-
-//     margin: 0 auto;
-//     width: 80%;
-//     grid-template-rows:repeat(3, 1fr);
-//     grid-template-columns: repeat(2, 1fr);
-//     background-color: rebeccapurple;
-// }
