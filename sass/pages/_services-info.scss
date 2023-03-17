@@ -1,0 +1,38 @@
+//services info css here ////
+
+
+.section__services-info{
+    max-width: 80%;
+    
+    background-color: rgba(255,255,255,255);
+    margin: 0 auto;
+    padding: 8rem 6rem;
+
+    .services__info{
+        display: flex;
+        align-items: center;
+        
+
+       [class^="services__info--"]:not(:last-child){
+        border-right: 1px solid black;
+       }
+       
+       [class^="services__info--"]:not(:first-child){
+        padding-left: 2rem;
+       }
+       
+    }
+
+
+}
+
+// .parent{
+// background-color: paleturquoise;
+// height: 30rem;
+// [class^="parent-"]:not(:last-child){
+//     background-color: rgb(212, 63, 21);
+//     height: 20rem;
+   
+// }
+
+// }

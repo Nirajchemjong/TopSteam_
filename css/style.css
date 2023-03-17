@@ -6,7 +6,8 @@
   box-sizing: inherit; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #f6f6f6; }
 
 html {
   font-size: 62.5%; }
@@ -26,6 +27,10 @@ html {
   color: #d5a12b;
   font-weight: 400; }
 
+.section__header-3 {
+  font-size: 2.2rem;
+  text-align: left; }
+
 .steam {
   color: #3b1606; }
 
@@ -37,8 +42,20 @@ html {
 .u-margin-top {
   margin-top: 12rem; }
 
+.u-margin-btm {
+  margin-bottom: 4rem; }
+
 .small-margin-top {
   margin-top: 4rem; }
+
+.u-center {
+  text-align: center; }
+
+.psize-nor {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  text-align: left;
+  padding-right: 2rem; }
 
 .nav {
   background-image: linear-gradient(to right bottom, #d5a12b, rgba(213, 161, 43, 0.9));
@@ -161,6 +178,49 @@ li a {
   justify-content: space-around;
   align-items: center; }
 
+.section__footer {
+  margin-top: 2rem;
+  min-height: 28rem;
+  background-color: black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+  .section__footer .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .section__footer .footer .footer__heading {
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 2.4rem;
+      color: white; }
+    .section__footer .footer [class^="footer__item-"] {
+      list-style: none;
+      margin: 0;
+      padding-left: 8rem;
+      text-decoration: none;
+      font-weight: 200;
+      text-size-adjust: 1.8rem; }
+    .section__footer .footer [href="#"] {
+      margin: 0;
+      text-decoration: none;
+      font-weight: 200;
+      font-size: 1.8rem;
+      color: white; }
+
+.section__services-info {
+  max-width: 80%;
+  background-color: white;
+  margin: 0 auto;
+  padding: 8rem 6rem; }
+  .section__services-info .services__info {
+    display: flex;
+    align-items: center; }
+    .section__services-info .services__info [class^="services__info--"]:not(:last-child) {
+      border-right: 1px solid black; }
+    .section__services-info .services__info [class^="services__info--"]:not(:first-child) {
+      padding-left: 2rem; }
+
 .btn {
   border: 2px solid white;
   text-align: center;
@@ -248,15 +308,22 @@ button {
   font-size: 5rem; }
 
 .services__content {
-  max-width: 100%; }
+  max-height: 60rem;
+  padding: 8rem; }
   .services__content--img {
-    max-width: 43rem;
+    max-width: 38rem;
     overflow: hidden;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
     .services__content--img-1 {
-      height: 12rem; }
+      height: 25rem; }
     .services__content--img-p {
       text-align: center;
       font-size: 2.4rem; }
+
+.section__services--info {
+  max-width: 90%;
+  background-color: white;
+  margin: 0 auto;
+  padding: 8rem 6rem; }

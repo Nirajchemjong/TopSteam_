@@ -6,7 +6,6 @@
 }
 .section__header-1{
     color:white;
-   
     margin-top: 13rem;
 }
 .section__header-2{
@@ -14,6 +13,13 @@
     padding-left: -3rem;
     color: $color-primary;
     font-weight: 400;
+   
+}
+.section__header-3{
+    
+    font-size: 2.2rem;
+    text-align: left;
+    
    
 }
 
@@ -31,7 +37,21 @@
 .u-margin-top{
     margin-top: 12rem;
 }
+.u-margin-btm{
+    margin-bottom: 4rem;
+}
 
 .small-margin-top{
     margin-top: 4rem;
+}
+.u-center{
+    text-align: center;
+}
+
+.psize-nor{
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    text-align: left;
+    padding-right: 2rem;
+    
 }
