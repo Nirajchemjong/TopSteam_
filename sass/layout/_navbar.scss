@@ -1,0 +1,60 @@
+
+@media(max-width:1200px){
+
+    .hamline{
+        background-color: bisque;
+    }
+}
+
+
+.hamline {
+
+
+
+
+    background-image: linear-gradient(to right bottom, $color-primary, rgba($color-primary, 0.9));
+    overflow: hidden;
+    width: 100%;
+
+
+    .hamline__nav {
+        display: flex;     
+        justify-content: space-between;
+        align-items: center;
+
+        //topography
+
+
+
+
+        &--left {
+          padding: 2rem;
+            .logo {
+                text-decoration: none;
+                font-size: 2rem;
+                font-weight: bold;
+                color: #ffff;
+            }
+
+
+        }
+        
+        &--middle{
+            display: flex;
+            justify-content: space-around;
+            color: red;
+            width: 55%;
+           
+        }
+        &--right {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 20%;
+
+            .btn {
+              margin-right: 1rem;
+            }
+        }
+    }
+}

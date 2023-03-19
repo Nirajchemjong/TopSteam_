@@ -15,17 +15,25 @@
 //     }  
 // }
 
+@media (max-width: 1278px){
+    .nav{
+        width: 100%;
+    }
+}
 
 .nav{
     
     background-image: linear-gradient(to right bottom, $color-primary, rgba($color-primary, 0.9));
     overflow: hidden;
+    width: 100%;
+    
 }
+
 li{
     float: left;
-    margin: 2.6rem;
+    margin: 1.6rem;
     list-style-type: none;
-
+  
     &:nth-of-type(6),
     &:nth-of-type(7){
         float: right;
@@ -34,12 +42,12 @@ li{
 }
 
 li a {
-    display: block;
+     display: block;
       text-decoration: none;
       font-size: 2rem;
       font-weight: bold;
       color: #ffff;
-      padding: 14px 16px;
+      
 }
 
 .section__header{
