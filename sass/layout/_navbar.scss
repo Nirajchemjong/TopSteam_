@@ -1,11 +1,10 @@
 
-@media(max-width:1200px){
-
-    .hamline{
-        background-color: bisque;
-    }
+//media-query
+@media(max-width:790px){
+    *{
+        border: 1px solid red;
+    } 
 }
-
 
 .hamline {
 
@@ -18,7 +17,7 @@
 
 
     .hamline__nav {
-        display: flex;     
+        display: flex;
         justify-content: space-between;
         align-items: center;
 
@@ -28,7 +27,8 @@
 
 
         &--left {
-          padding: 2rem;
+            padding: 2rem;
+
             .logo {
                 text-decoration: none;
                 font-size: 2rem;
@@ -38,14 +38,21 @@
 
 
         }
-        
-        &--middle{
+
+        &--middle {
             display: flex;
             justify-content: space-around;
             color: red;
             width: 55%;
-           
+            &-item{
+                text-decoration: none;
+                color: #ffffff;
+                font-size: 1.6rem;
+                font-weight: 300;
+            }
+
         }
+
         &--right {
             display: flex;
             justify-content: space-around;
@@ -53,7 +60,7 @@
             width: 20%;
 
             .btn {
-              margin-right: 1rem;
+                margin-right: 1rem;
             }
         }
     }

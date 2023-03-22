@@ -75,7 +75,7 @@
 
     .col-1-of-2 {
         width: calc((100% - #{$gutter-horizontal}) / 2);
-        background-color: yellowgreen;
+        
     }
 
     .col-1-of-3 {
@@ -108,12 +108,11 @@
    .section__info{
   
     display:grid;
-    grid-template-rows: repeat(3, 442px);
-    grid-template-columns: repeat(2, 683px);
+    grid-template-rows: repeat(3, 44.2rem);
+    grid-template-columns: repeat(2, 68.2rem) repeat(auto-fit, minmax(250px, 68.2rem));
     justify-content: center;
-    align-items: center;
-    position: relative;
-
+    align-items: stretch;
+  
    
     
     
@@ -121,13 +120,12 @@
         max-width: 60rem;
         height: 44rem;
         margin-left: 3rem;
-        background-color: yellowgreen;
         grid-row:1 / 2 ;
         grid-column: 1 / 2;
         background-image: url("/img/Topsteam/pexels-artem-podrez-8985963.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        position: relative;
+        
         z-index: 10;
     
         
